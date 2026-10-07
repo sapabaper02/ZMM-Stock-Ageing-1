@@ -1,0 +1,118 @@
+@Metadata.layer: #CORE
+@Search.searchable: true
+@UI.headerInfo: {
+    typeName: 'Stock Ageing',
+    typeNamePlural: 'Stock Ageing Analysis Report',
+    title: {
+    type: #STANDARD,
+    label: 'Stock Ageing Analysis Report',
+    value: 'ItemCode'
+}
+ }
+annotate entity ZC_STOCK_AGEING_REPORT with
+{
+  @UI.facet:[{ id:          'ItemCode',
+               purpose:     #STANDARD,
+               type:        #IDENTIFICATION_REFERENCE,
+               position:    10,
+               label:       'Ageing of Stock'
+                }]
+
+  @UI:{ lineItem:[{position:10 }],
+        selectionField: [{ position: 10 }],
+        identification: [{position:10}]}      
+  @Consumption.valueHelpDefinition: [{ entity: {
+      name: 'I_MaterialStock_2',
+      element: 'ItemCode'
+  } }]
+  @EndUserText.label: 'Item Code'
+  @Search.defaultSearchElement: true
+  ItemCode;
+  @UI:{ lineItem:[{position:20}],
+        identification:[{position:20}]}
+  @EndUserText.label: 'Item Description'
+  ItemDescription;
+  @UI.selectionField: [{ position: 20 }]
+  @Consumption.valueHelpDefinition: [{ entity: {
+      name: 'I_Batch',
+      element: 'Batch'
+  } }]
+  @EndUserText.label: 'Batch'
+  @Search.defaultSearchElement: true
+  Batch;
+  @UI:{ lineItem:[{position:30}],
+        selectionField: [{ position: 25 }],
+        identification:[{position:30}]}
+  @EndUserText.label: 'Posting Date'
+  PostingDate;
+  @UI:{ lineItem:[{position:40}],
+        selectionField: [{ position: 30 }],
+        identification:[{position:40}]}
+  @Search.defaultSearchElement: true
+  @EndUserText.label: 'Ageing Date'
+  AgeingDate;  
+  @UI:{ lineItem:[{position:50}],        
+        identification:[{position:50}]}
+  @EndUserText.label: 'Co Code'  
+  CompanyCode;
+  @UI.selectionField: [{ position: 50 }]
+  @EndUserText.label: 'Material Group'
+  MaterialGroup;
+  @UI.selectionField: [{ position: 60 }]
+  StorageLocation;
+  @UI:{ lineItem:[{position:60}],
+        selectionField: [{ position: 40 }],
+        identification:[{position:60}]}
+  @EndUserText.label: 'Plant'
+  Plant;
+  @UI:{ lineItem:[{position:70}],        
+        identification:[{position:70}]}
+  @EndUserText.label: 'Total Qty'
+  TotalQuantity;
+  @UI:{lineItem:[{position:80}],
+     identification:[{position:80}]}
+  @EndUserText.label: 'UOM'
+  Uom;
+  @UI:{ lineItem:[{position:85}],
+        identification:[{position:85}]}
+  @EndUserText.label: 'Value'
+  Value;
+  @UI:{ lineItem:[{position:86}],
+        identification:[{position:86}]}
+  @EndUserText.label: 'Total Value'
+  TotalValue;
+  @UI:{ lineItem:[{position:90}],
+        identification:[{position:90}]}
+  @EndUserText.label: '>= 0 to 7 Days'
+  Days0to7;
+  @UI:{ lineItem:[{position:100}],
+        identification:[{position:100}]}
+  @EndUserText.label: '>= 7 to 15 Days'
+  Days7to15;
+  @UI:{ lineItem:[{position:110}],
+        identification:[{position:110}]}
+  @EndUserText.label: '>= 15 to 30 Days'
+  Days15to30;
+  @UI:{ lineItem:[{position:120}],
+        identification:[{position:120}]}
+  @EndUserText.label: '>= 30 to 60 Days'
+  Days30to60;
+  @UI:{ lineItem:[{position:130}],
+        identification:[{position:130}]}
+  @EndUserText.label: '>= 60 to 90 Days'
+  Days60to90;
+  @UI:{ lineItem:[{position:140}],
+        identification:[{position:140}]}
+  @EndUserText.label: '>= 90 to 120 Days'
+  Days90to120;
+  @UI:{ lineItem:[{position:150}],
+        identification:[{position:150}]}
+  @EndUserText.label: '>= 120 to 180 Days'
+  Days120to180;
+  @UI:{ lineItem:[{position:160}],
+        identification:[{position:160}]}
+  @EndUserText.label: 'Above 180 days'
+  above180Days;
+  
+
+}

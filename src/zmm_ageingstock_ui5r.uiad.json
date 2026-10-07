@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Inventory Stock Ageing",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Inventory Stock Ageing"
+  },
+  "ui5AppDetails": {
+    "appId": "com.global.inventorystockageing"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_29C2D54F29C85AF78B5AF8C681C2592B3796C1D8_TM",
+    "semanticObject": "ZSO_Ageingstock",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_29C2D54F29C85AF78B5AF8C681C2592B3796C1D8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Inventory Stock Ageing"
+      }
+    }
+  ]
+}

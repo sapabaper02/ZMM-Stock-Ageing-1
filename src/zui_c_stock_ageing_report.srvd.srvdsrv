@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Difinition For Stock Ageing'
+define service ZUI_C_STOCK_AGEING_REPORT {
+  expose ZC_STOCK_AGEING_REPORT;
+}

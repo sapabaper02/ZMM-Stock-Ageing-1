@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Stock Ageing Analysis",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Stock Ageing Analysis"
+  },
+  "ui5AppDetails": {
+    "appId": "com.global.stockageinganalysis"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_82176B06E329779CE45725C92DA984CC47A5D6DC_TM",
+    "semanticObject": "ZSO_STOCKAGEING",
+    "action": "Manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_82176B06E329779CE45725C92DA984CC47A5D6DC_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Stock Ageing Analysis"
+      }
+    }
+  ]
+}
